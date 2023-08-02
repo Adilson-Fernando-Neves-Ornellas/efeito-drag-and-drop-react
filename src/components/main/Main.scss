@@ -22,11 +22,15 @@
                 width: 100%;
                 border: 0;
                 padding: 0;
+                box-shadow: 0 0 0 0;
+                outline: 0;
             }
             .buttonmain{
                 background: #E2E8E9;
                 border: 0;
                 padding: 0;
+                display: flex;
+                align-items: center;
                 .imgbutton{
                 background: #E2E8E9;
     
@@ -52,8 +56,17 @@
                     align-items: center;
                     justify-content: flex-start;
                     width: 100%;
+                    color:black;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
                     .iconlist{
                         margin-left: 10px;
+                        background-color: white;
+                        border: 0;
+                        padding: 0;
                     }
                     .conteinerdeleteli{
                         display: flex;
@@ -61,6 +74,7 @@
                         width: 100%;
                         margin-right: 10px;
                         .deleteibutton{
+                            padding-right: 5px;
                             background-color: white;
                             border: 0;
                             .deleteicon{

@@ -1,0 +1,105 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 18px ;
+    .headermenu{
+        width: 6.233766%;
+        height: 24px;
+        .menubutton{
+            border: 0;
+            background-color: white;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            .buttonimg{
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+    }
+    .menuFechado{
+        display: none;
+    }
+    .menuAberto{
+        position: absolute;
+        background-color: #0A151E ;
+        top: 0%;
+        right: 50%;
+        left: 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: baseline;
+        .tituloMenu{
+            color: white;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .buttonfechar{
+            background-color: white;
+            border: 0;
+            border-radius: 25%;
+            width: 10%;
+            height: 7.56%;
+            color: black;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
+    .headercarinho{
+        width: 6.233766%;
+        height: 24px;
+        .buttoncarrinho{
+            border: 0;
+            background-color: white;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            .imgcarrinho{
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+    }
+    .carrinhoFechado{
+        display: none;
+    }
+    .carrinhoAberto{
+        position: absolute;
+        background-color: #0A151E ;
+        top: 0%;
+        left: 50%;
+        right: 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: baseline;
+        .tituloCarrinho{
+            color: white;
+            margin: 0;
+            margin-top: 10px; 
+        }
+        .buttonfechar{
+            background-color: white;
+            border: 0;
+            border-radius: 25%;
+            width: 10%;
+            height: 7.56%;
+            color: black;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
+}

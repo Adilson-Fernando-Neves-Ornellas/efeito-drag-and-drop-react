@@ -44,7 +44,7 @@ function Main() {
     <div className='main'>
       <div className='mainconteiner'>
 
-      <div className='maininputbutton'>
+      <form onSubmit={addNovoItem}  className='maininputbutton'>
 
         <input 
           className='imputmain'
@@ -54,11 +54,11 @@ function Main() {
           onChange={(event) => setNovaListaInicial(event.target.value)}
           />
 
-        <button className='buttonmain' onClick={addNovoItem}>
+        <button className='buttonmain' onClick={addNovoItem} type='submit'>
             <img className='imgbutton' src={imgaddlista} alt="button adicionar lista" />
         </button>
 
-        </div>  
+        </form >  
       </div>
 
       <ul className='ullista'>
@@ -66,9 +66,10 @@ function Main() {
           {lista.map(listasInicial=>(
             <li className='lilista' key={listasInicial.id}>
               <div className='conteinerli'>
-
-              <img className='iconlist' src={iconlist} alt="icon List" />
-              {listasInicial.titulo}
+                <button className='iconlist'>
+                  <img  src={iconlist} alt="icon List" />
+                </button>
+                {listasInicial.titulo}
                 <div className='conteinerdeleteli'>
                   <button className='deleteibutton' onClick={() => removeItem(listasInicial.id)}>
                     <img className='deleteicon' src={deletelist} alt="Excluir Lista" />
